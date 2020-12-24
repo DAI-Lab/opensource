@@ -1,0 +1,15 @@
+- name: Instagram
+  icon: img/social/Instagram.svg
+  url: '#'
+- name: fb
+  icon: img/social/fb.svg
+  url: '#'
+- name: in
+  icon: img/social/in.svg
+  url: '#'
+- name: twitter
+  icon: img/social/twitter.svg
+  url: '#'
+- name: yt
+  icon: img/social/yt.svg
+  url: '#'

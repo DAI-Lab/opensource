@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#0047BB"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+    <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+  
+    <meta name="robots" content="noindex" />
+
+    <link rel="stylesheet" href="{{'/css/main.css' | relative_url }}">
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+    <link rel="icon" type="image/png" href="{{'/img/DAI-Lab-Logo.svg' | relative_url}}"/>
+    <link rel="apple-touch-icon" href="{{'/img/DAI-Lab-Logo.svg' | relative_url}}">
+ 
+  </head>
+  <body>
+    {% include nav.html %}
+    {{ content }}
+    {% include footer.html %}
+
+    {% comment %}
+    <script src="{{'js/dist/app.bundle.js' | relative_url }}"></script>
+    <script src="{{'js/dist/main.bundle.js' | relative_url }}"></script>
+    {% endcomment %}
+    <script src="//cdnjs.cloudflare.com/ajax/libs/list.js/2.3.0/list.min.js"></script>
+
+    <script>
+      var options = {
+          valueNames: [ 'name', 'city' ]
+      };
+
+      var hackerList = new List('hacker-list', options);
+    </script>
+
+    <script>
+      function filterByTheme() {
+        var input, filter, wrapper, items, item, i, txtValue;
+        input = document.getElementById('allThemes');
+        filter = input.value;
+        wrapper = document.getElementById("libWarp");
+        items = wrapper.getElementsByClassName('lib-item');
+        console.log(filter);
+
+        // Loop through all list items, and hide those who don't match the search query
+        for (i = 0; i < items.length; i++) {
+          // txtValue = item.textContent || item.innerText;
+          if (items[i].classList.contains(filter)) {
+            items[i].style.display = "";
+          } else {
+            items[i].style.display = "none";
+          }
+        }
+      }
+
+
+      function filterByProject() {
+        var input, filter, wrapper, items, item, i, txtValue;
+        input = document.getElementById('allProjects');
+        filter = input.value;
+        wrapper = document.getElementById("libWarp");
+        items = wrapper.getElementsByClassName('lib-item');
+
+        // Loop through all list items, and hide those who don't match the search query
+        for (i = 0; i < items.length; i++) {
+          // txtValue = item.textContent || item.innerText;
+          if (items[i].classList.contains(filter)) {
+            items[i].style.display = "";
+          } else {
+            items[i].style.display = "none";
+          }
+        }
+      }
+      
+      function searchFunction() {
+          // Declare variables
+        var input, filter, wrapper, items, item, i, txtValue;
+        input = document.getElementById('searchInput');
+        filter = input.value.toUpperCase();
+        wrapper = document.getElementById("libWarp");
+        items = wrapper.getElementsByClassName('lib-item');
+
+        // Loop through all list items, and hide those who don't match the search query
+        for (i = 0; i < items.length; i++) {
+          item = items[i].querySelector('.lib-name');
+          txtValue = item.textContent || item.innerText;
+          if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            items[i].style.display = "";
+          } else {
+            items[i].style.display = "none";
+          }
+        }
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,284 @@
+- Library_name: SDV
+  badge_name: SDV
+  Github_Link: "https://github.com/sdv-dev/SDV"
+  github_owner: "sdv-dev"
+  github_repo: "SDV"
+  Theme: synthetic data
+  Project: sdv
+  Text_in_it: "Synthetic Data Generation for tabular, relational, time series data."
+  website: sdv.dev/sdv
+  Stackoverflow: 
+  slack_link: 
+  docs_link: 
+  downloads: 
+  Level: 
+        
+- Library_name: Copulas
+  badge_name: Copulas
+  Github_Link: "https://github.com/sdv-dev/Copulas"
+  github_owner: "sdv-dev"
+  github_repo: "Copulas"
+  Theme: synthetic data 
+  Project: sdv
+  Text_in_it: "A library to model multivariate data using copulas."
+  website: sdv.dev/copulas/
+  Stackoverflow: 
+  slack_link: 
+  docs_link: 
+  downloads: 
+  Level: 
+        
+- Library_name: RDT
+  badge_name: RDT
+  Github_Link: "https://github.com/sdv-dev/RDT"
+  github_owner: "sdv-dev"
+  github_repo: "RDT"
+  Theme: ML
+  Project: sdv
+  Text_in_it: "A library of Reversible Data Transforms."
+  website: 
+  Stackoverflow: 
+  slack_link: 
+  docs_link: 
+  downloads: 
+  Level: 
+        
+- Library_name: CTGAN
+  badge_name: CTGAN
+  Github_Link: "https://github.com/sdv-dev/CTGAN"
+  github_owner: "sdv-dev"
+  github_repo: "CTGAN"
+  Theme: synthetic data
+  Project: sdv
+  Text_in_it: "Conditional GAN for generating synthetic tabular data."
+  website: 
+  Stackoverflow: 
+  slack_link: 
+  docs_link: 
+  downloads: 
+  Level: 
+        
+- Library_name: DeepEcho
+  badge_name: DeepEcho
+  Github_Link: "https://github.com/sdv-dev/DeepEcho"
+  github_owner: "sdv-dev"
+  github_repo: "DeepEcho"
+  Theme: synthetic data, time series
+  Project: sdv
+  Text_in_it: ""
+  website: 
+  Stackoverflow: 
+  slack_link: 
+  docs_link: 
+  downloads: 
+  Level: 
+        
+- Library_name: TGAN
+  badge_name: TGAN
+  Github_Link: "https://github.com/sdv-dev/TGAN"
+  github_owner: "sdv-dev"
+  github_repo: "TGAN"
+  Theme: synthetic data 
+  Project: sdv
+  Text_in_it: "Generative adversarial training for generating synthetic tabular data. "
+  website: 
+  Stackoverflow: 
+  slack_link: 
+  docs_link: 
+  downloads: 
+  Level: 
+        
+- Library_name: Tracer
+  badge_name: Tracer
+  Github_Link: "https://github.com/data-dev/DataTracer"
+  github_owner: "data-dev"
+  github_repo: "DataTracer"
+  Theme: data lineage, ML
+  Project: data tracer
+  Text_in_it: "Data Lineage Tracing Library."
+  website: 
+  Stackoverflow: 
+  slack_link: 
+  docs_link: 
+  downloads: 
+  Level: 
+        
+- Library_name: Metadata
+  badge_name: Metadata
+  Github_Link: "https://github.com/data-dev/MetaData"
+  github_owner: "data-dev"
+  github_repo: "MetaData"
+  Theme: data lineage, ML
+  Project: data tracer
+  Text_in_it: "This project formalizes a way to describe the multi entity, multi table, spatio temporal datasets."
+  website: https://data-dev.github.io/MetaData/
+  Stackoverflow: 
+  slack_link: 
+  docs_link: 
+  downloads: 
+  Level: 
+        
+- Library_name: BTB
+  badge_name: baytune
+  Github_Link: "https://github.com/HDI-Project/BTB"
+  github_owner: "HDI-Project"
+  github_repo: "BTB"
+  Theme: automl 
+  Project: mlbazaar
+  Text_in_it: "A simple, extensible library for developing AutoML systems."
+  website: https://hdi-project.github.io/BTB/
+  Stackoverflow: 
+  slack_link: 
+  docs_link: 
+  downloads: 
+  Level: 
+        
+- Library_name: MLBlocks
+  badge_name: MLBlocks
+  Github_Link: "https://github.com/HDI-Project/MLBlocks"
+  github_owner: "HDI-Project"
+  github_repo: "MLBlocks"
+  Theme: automl 
+  Project: mlbazaar
+  Text_in_it: "A library for composing end-to-end tunable machine learning pipelines. "
+  website: https://hdi-project.github.io/MLBlocks/
+  Stackoverflow: 
+  slack_link: 
+  docs_link: 
+  downloads: 
+  Level: 
+        
+- Library_name: MLPrimitives
+  badge_name: MLPrimitives
+  Github_Link: "https://github.com/HDI-Project/MLPrimitives"
+  github_owner: "HDI-Project"
+  github_repo: "MLPrimitives"
+  Theme: automl 
+  Project: mlbazaar
+  Text_in_it: "Primitives for machine learning and data science."
+  website: https://hdi-project.github.io/MLPrimitives/
+  Stackoverflow: 
+  slack_link: 
+  docs_link: 
+  downloads: 
+  Level: 
+        
+- Library_name: Orion
+  badge_name: Orion
+  Github_Link: "https://github.com/signals-dev/Orion"
+  github_owner: "signals-dev"
+  github_repo: "Orion"
+  Theme: time series, automl, anomaly detection
+  Project: signals
+  Text_in_it: "A machine learning library for detecting anomalies in signals. "
+  website: https://signals-dev.github.io/Orion/
+  Stackoverflow: 
+  slack_link: 
+  docs_link: 
+  downloads: 
+  Level: 
+        
+- Library_name: AutoBazaar
+  badge_name: AutoBazaar
+  Github_Link: "https://github.com/HDI-Project/AutoBazaar"
+  github_owner: "HDI-Project"
+  github_repo: "AutoBazaar"
+  Theme: automl 
+  Project: mlbazaar
+  Text_in_it: "AutoBazaar: An AutoML System from the Machine Learning Bazaar."
+  website: https://hdi-project.github.io/AutoBazaar/
+  Stackoverflow: 
+  slack_link: 
+  docs_link: 
+  downloads: 
+  Level: 
+        
+- Library_name: GreenGuard
+  badge_name: GreenGuard
+  Github_Link: "https://github.com/signals-dev/GreenGuard"
+  github_owner: "signals-dev"
+  github_repo: "GreenGuard"
+  Theme: time series, automl, renewable energy
+  Project: signals 
+  Text_in_it: "AutoML for Renewable Energy Industries."
+  website: https://signals-dev.github.io/GreenGuard/
+  Stackoverflow: 
+  slack_link: 
+  docs_link: 
+  downloads: 
+  Level: 
+        
+- Library_name: Cardea
+  badge_name: Cardea
+  Github_Link: "https://github.com/DAI-Lab/Cardea"
+  github_owner: "DAI-Lab"
+  github_repo: "Cardea"
+  Theme: automl, healthcare
+  Project: mlbazaar
+  Text_in_it: "An open source automl library for using machine learning in healthcare. "
+  website: 
+  Stackoverflow: 
+  slack_link: 
+  docs_link: 
+  downloads: 
+  Level: 
+        
+- Library_name: ATM
+  badge_name: ATM
+  Github_Link: "https://github.com/HDI-Project/ATM"
+  github_owner: "HDI-Project"
+  github_repo: "ATM"
+  Theme: automl 
+  Project: mlbazaar
+  Text_in_it: "Auto Tune Models - A multi-tenant, multi-data system for automated machine learning. "
+  website: https://hdi-project.github.io/ATM/
+  Stackoverflow: 
+  slack_link: 
+  docs_link: 
+  downloads: 
+  Level: 
+        
+- Library_name: sdmetrics
+  badge_name: sdmetrics
+  Github_Link: "https://github.com/sdv-dev/SDMetrics"
+  github_owner: "sdv-dev"
+  github_repo: "SDMetrics"
+  Theme: synthetic data, metrics 
+  Project: sdv
+  Text_in_it: "Metrics to evaluate quality and efficacy of synthetic datasets."
+  website: 
+  Stackoverflow: 
+  slack_link: 
+  docs_link: 
+  downloads: 
+  Level: 
+        
+- Library_name: sdgym
+  badge_name: sdgym
+  Github_Link: "https://github.com/sdv-dev/SDGym"
+  github_owner: "sdv-dev"
+  github_repo: "SDGym"
+  Theme: synthetic data, benchmarking
+  Project: sdv
+  Text_in_it: "Benchmarking synthetic data generation methods."
+  website: 
+  Stackoverflow: 
+  slack_link: 
+  docs_link: 
+  downloads: 
+  Level: 
+        
+- Library_name: Datareactor
+  badge_name: DataReactor
+  Github_Link: "https://github.com/data-dev/DataReactor"
+  github_owner: "data-dev"
+  github_repo: "DataReactor"
+  Theme: data lineage, ML
+  Project: data tracer
+  Text_in_it: "Augmenting relational datasets by generating derived columns with known lineage."
+  website: https://data-dev.github.io/DataReactor/
+  Stackoverflow: 
+  slack_link: 
+  docs_link: 
+  downloads: 
+  Level: 

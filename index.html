@@ -1,0 +1,139 @@
+---
+layout: default
+permalink: /
+---
+
+{% assign libs = site.data.open-sources-libs %}
+{% assign allThemes = '' %}
+{% assign allProjects = '' %}
+{% for item in libs %}
+{% assign item_themes = item.Theme | split: ", "%}
+{% assign item_projects = item.Project | split: ", "%}
+  {% for theme in item_themes %}
+    {% capture currentTheme%}{{ theme | slugify }}, {% endcapture %}
+    {% assign allThemes = allThemes | append: currentTheme %}
+  {% endfor %}
+
+  {% for project in item_projects %}
+    {% capture currentProject%}{{ project | slugify }}, {% endcapture %}
+    {% assign allProjects = allProjects | append: currentProject %}
+  {% endfor %}
+  
+
+  
+{% endfor %} 
+
+<link rel="stylesheet" href="/css/main.css">
+
+<section class="mb-5 mt-8 mb-xxl-8">
+  <div class="container" style="max-width: 980px">
+    <div class="row">
+      <div class="col-lg-4 col-md-6 mb-4 lib-item">
+        <div class="input-group mb-2 bg-light">
+          <div class="input-group-prepend">
+            <div class="input-group-text bg-light">
+              <img src="/img/search.svg" width="14" height="14" alt="">
+            </div>
+          </div>
+          <input 
+            id="searchInput"
+            class="form-control" 
+            type="search" 
+            placeholder="Search by name" 
+            aria-label="Search"
+            oninput="searchFunction()"
+            >
+        </div>
+        
+      </div>
+      <div class="col-lg-4 col-md-6 mb-4 lib-item">
+        <!-- <label for="disabledSelect" class="form-label">Disabled select menu</label> -->
+      <select id="allThemes" 
+        onchange="filterByTheme()"
+        class="custom-select bg-light">
+        <option>All Themes</option>
+        
+        {% assign uniqueThemes = allThemes | split: ', ' | uniq %}
+        {% for item in uniqueThemes %} 
+          <option value="{{item}}">{{item | replace: '-', ' '}}</option>
+        {% endfor %}
+      </select>
+      </div>
+      <div class="col-lg-4 col-md-6 mb-4 lib-item">
+        <!-- <label for="disabledSelect" class="form-label">Disabled select menu</label> -->
+        <select id="allProjects" class="custom-select bg-light"
+          onchange="filterByProject()"
+          >
+          <option>All Projects</option>
+          {% assign uniqueProjects = allProjects | split: ', ' | uniq %}
+        {% for item in uniqueProjects %} 
+          <option value="{{item}}">{{item | replace: '-', ' '}}</option>
+        {% endfor %}
+        </select>
+      </div>
+    </div>
+    <div class="row justify-content-center justify-content-lg-start" id="libWarp">
+      {% assign libs = site.data.open-sources-libs | sort: "Library_name" %}
+      {% for item in libs %}
+      {% assign item_themes = item.Theme | split: ","%}
+      {% assign item_projects = item.Project | split: ","%}
+      {% assign currentThemes = '' %}
+      {% assign currentProjects = '' %}
+        {% for theme in item_themes %}
+          {% capture currentTheme%}{{ theme | slugify }} {% endcapture %}
+          {% assign currentThemes = currentThemes | append: currentTheme %}
+        {% endfor %}
+
+        {% for project in item_projects %}
+          {% capture currentProject%}{{ project | slugify }} {% endcapture %}
+          {% assign currentProjects = currentProjects | append: currentProject %}
+        {% endfor %}
+
+        <div class="col-lg-4 col-md-6 mb-4 lib-item {{currentThemes}} {{currentProjects}}">
+          <div class="card h-100 rounded-0 card-shadow">
+            <div class="card-body pb-0 px-4 pt-4">
+              <div>
+                <img src="img{{ item.Library_name | relative_url }}.svg" alt="{{ item.Library_name }}" style="width: 40px; height: 40px;">                
+              </div>
+              <p class="text-20 mt-3 mb-4 font-weight-normal lib-name">{{ item.Library_name }}</p>
+              <p class="font-weight-light text-14 mb-2 github-desc">{{ item.Text_in_it }}</p>
+              
+            </div>
+            
+            <div class="card-footer border-0 bg-transparent pt-0">
+              <p class="github-topics text-10 mb-2" data-owner="{{ item.github_owner }}" data-repo="{{ item.github_repo }}">
+                
+              </p>
+              <p class="mb-4" style="min-height: 75px;">
+                <a href="https://pepy.tech/project/{{item.badge_name}}">
+                  <img src="https://pepy.tech/badge/{{item.badge_name}}" alt="Downloads">
+                </a>
+                <a href="https://pypi.python.org/pypi/{{item.badge_name}}">
+                  <img 
+                    src="https://img.shields.io/pypi/v/{{item.badge_name}}.svg" 
+                    alt="PyPi Shield">
+                </a>
+                <a href="https://codecov.io/gh/sdv-dev/{{item.badge_name}}">
+                  <img src="https://codecov.io/gh/sdv-dev/{{item.badge_name}}/branch/master/graph/badge.svg" 
+                  alt="Coverage Status">
+                </a>
+              </p>
+              <p class="mb-2">
+                <a href="{{ item.Github_Link }}" class="mr-4 hoverable-i">
+                  <img width="17" height="17" src="{{'/img/Github.svg' | relative_url }}" alt="{{ item.Library_name }} Github repository">
+                </a>
+                {% if item.docs_link %}
+                <a href="{{ item.docs_link }}" class="mr-4 hoverable-i">
+                  <img width="17" height="17" src="{{'/img/Docs.svg' | relative_url }}" alt="{{ item.Library_name }} Documentation">
+                </a>
+                {% endif %}
+              </p>
+            </div>
+            
+          </div>
+        </div>
+        {% endfor %}
+    </div>
+  </div>
+</section>
+

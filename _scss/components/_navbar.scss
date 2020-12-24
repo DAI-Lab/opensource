@@ -1,0 +1,40 @@
+/* purgecss start ignore */
+.navbar {
+  background: $white;
+  border-bottom: 3px solid $info;
+  min-height: 87px;
+  transition: background-color 250ms ease-in-out;
+  .nav-bg-white & {
+    background: $white;
+    box-shadow: 6px 3px 12px rgba(68, 68, 68, 0.05)
+  }
+  
+  @include media-breakpoint-down(lg) { 
+    background: $white;
+  }
+
+  // .nav-link {
+  //   @include media-breakpoint-up(xxl) { 
+  //     font-size: 1.5rem !important;
+  //   }
+  //   @include media-breakpoint-up(xxxl) { 
+  //     font-size: 2rem !important; 
+  //   }
+  // }
+}
+
+.navbar-brand {
+  left: 16px;
+  top: 16px;
+  @include media-breakpoint-up(lg) { 
+    left: 32px;
+  }
+}
+
+.navbar-toggler  {
+  right: 16px;
+  top: 16px;
+  z-index: 3;
+}
+
+/* purgecss end ignore */

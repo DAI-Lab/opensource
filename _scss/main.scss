@@ -1,0 +1,23 @@
+/* Bootstrap */
+@import "vars/project-vars";
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+/* Global */
+@import "base/global";
+@import "base/bg";
+@import "base/object";
+
+/* Page */
+@import "pages/home-page";
+
+/* Layout */
+@import "layout/header";
+@import "layout/page";
+@import "layout/footer";
+
+/* Components */
+@import "components/navbar";
+
+/* Typography */
+@import "typography/font-face";
+@import "typography/font-family";

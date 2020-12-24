@@ -1,0 +1,76 @@
+.hero {
+  background-image: linear-gradient(to right, #F58286, #F8AB96);
+  background-size: cover;
+  background-position: right;
+
+
+  @include media-breakpoint-up(xl) {
+    min-height: 500px;
+  }
+
+  @include media-breakpoint-up(xxl) {
+    min-height: 640px;
+  }
+
+  @include media-breakpoint-up(xxxl) {
+    min-height: 670px;
+  }
+
+}
+
+.hero-bg {
+  background-image: linear-gradient(to right, #F58286, #F8AB96);
+}
+
+.trace-item {
+  transition: all 200ms ease;
+  background-color: rgba(255, 255, 255, 0.5);
+  &:hover {
+    background-color: white;
+  }
+}
+
+.hoverable-i {
+  transition: all 200ms ease;
+  &:hover {
+    text-decoration: none;
+    opacity: 0.8;
+  }
+}
+
+.topic-link {
+  font-weight: 400;
+  line-height: 1;
+  padding: 0.3rem 0.6rem;
+}
+
+.card-shadow {
+  box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.05)
+}
+
+.title-bordered {
+  border-bottom: 2px solid $rust;
+}
+
+.concept-item {
+  @include media-breakpoint-down(xxl) {
+    min-width: 210px;
+  }
+}
+
+.lib-item {
+  width: 334px;
+}
+
+.hero-logo {
+
+  min-width: 236px;
+}
+
+.min-height {
+  min-height: calc(100vh - 309px - 25px );
+}
+
+.github-desc {
+  min-height: 66px;
+}

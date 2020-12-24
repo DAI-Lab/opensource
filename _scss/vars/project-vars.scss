@@ -1,0 +1,232 @@
+// My vars
+$hero-gradient: linear-gradient(to right, #F58286, #F8AB96);
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1480px,
+  xxxl: 1700px,
+  xxxxl: 2200px,
+) !default;
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1404px,
+  xxxl: 1620px,
+  xxxxl: 1820px,
+) !default;
+
+
+// Color system
+
+$white:    #fff !default;
+$gray-100: #f8f9fa !default;
+$gray-200: #e9ecef !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #ced4da !default;
+$gray-500: #adb5bd !default;
+$gray-600: #6c757d !default;
+$gray-700: #495057 !default;
+$gray-800: #343a40 !default;
+$gray-900: #212529 !default;
+$black:    #000 !default;
+
+// fusv-disable
+$grays: (
+  "100": $gray-100,
+  "200": $gray-200,
+  "300": $gray-300,
+  "400": $gray-400,
+  "500": $gray-500,
+  "600": $gray-600,
+  "700": $gray-700,
+  "800": $gray-800,
+  "900": $gray-900
+) !default;
+// fusv-enable
+
+$blue:    #2C649E !default;
+$indigo:  #6610f2 !default;
+$purple:  #6f42c1 !default;
+$pink:    #d63384 !default;
+$red:     #F48387 !default;
+$orange:  #fd7e14 !default;
+$yellow:  #FFC54C !default;
+$green:   #198754 !default;
+$teal:    #20c997 !default;
+$cyan:    #0096DE !default;
+$bg-light: #F6F6F6;
+
+// scss-docs-start colors-map
+$colors: (
+  "blue":       $blue,
+  "indigo":     $indigo,
+  "purple":     $purple,
+  "pink":       $pink,
+  "red":        $red,
+  "orange":     $orange,
+  "yellow":     $yellow,
+  "green":      $green,
+  "teal":       $teal,
+  "cyan":       $cyan,
+  "white":      $white,
+  "gray":       $gray-600,
+  "gray-dark":  $gray-800
+) !default;
+// scss-docs-end colors-map
+$text-color: #444B4C;
+
+$primary:       $blue !default;
+$secondary:     $text-color !default;
+$success:       $green !default;
+$info:          $cyan !default;
+$warning:       $yellow !default;
+$danger:        $red !default;
+$light:         $bg-light !default;
+$dark:          $gray-800 !default;
+$lightblue:     #F2F8FE;
+$rust:     #411810;
+
+
+// scss-docs-start theme-colors-map
+$theme-colors: (
+  "primary":    $primary,
+  "secondary":  $secondary,
+  "success":    $success,
+  "info":       $info,
+  "warning":    $warning,
+  "danger":     $danger,
+  "light":      $light,
+  "lightblue":      $lightblue,
+  "dark":       $dark,
+  "rust":       $rust
+) !default;
+
+$enable-caret:                true !default;
+$enable-rounded:              true !default;
+$enable-shadows:              false !default;
+$enable-gradients:            false !default;
+$enable-transitions:          true !default;
+$enable-reduced-motion:       true !default;
+$enable-grid-classes:         true !default;
+$enable-button-pointers:      true !default;
+$enable-rfs:                  true !default;
+$enable-validation-icons:     true !default;
+$enable-negative-margins:     true !default;
+$enable-deprecation-messages: true !default;
+$enable-important-utilities:  true !default;
+
+
+$border-radius:               .6rem !default;
+$border-radius-sm:            .3rem !default;
+$border-radius-lg:            .8rem !default;
+
+$gradient: linear-gradient(180deg, rgba($white, .25), rgba($white, 1));
+
+$spacer: 1rem !default;
+$spacers: (
+  0: 0,
+  1: $spacer / 4,
+  2: $spacer / 2,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+  6: $spacer * 4,
+  7: $spacer * 5,
+  8: $spacer * 8,
+) !default;
+
+$display-font-sizes: (
+  1: 5rem,
+  2: 4.5rem,
+  3: 4rem,
+  4: 3.5rem,
+  5: 3rem,
+  6: 2.5rem
+);
+
+$body-color: $text-color;
+
+$font-weight-light:           400 !default;
+$font-weight-normal:          500 !default;
+$font-weight-bold:            600 !default;
+
+$font-weight-base:            $font-weight-light;
+
+$font-family-base: "HelveticaNeue", sans-serif;
+
+$font-size-base:              1rem !default; // Assumes the browser default, typically `16px`
+$h1-font-size:                $font-size-base * 1.87;
+$h2-font-size:                $font-size-base * 1.6;
+$h3-font-size:                $font-size-base * 1.5 !default;
+$h4-font-size:                $font-size-base * 1.4 !default;
+$h5-font-size:                $font-size-base * 1.3 !default;
+$h6-font-size:                $font-size-base !default;
+
+
+
+$headings-font-weight:        bold;
+
+$navbar-brand-font-size: 26;
+$navbar-padding-y:                  $spacer;
+
+$lead-font-size:              1.0625rem;
+
+$badge-font-weight:             400;
+
+$btn-border-radius:           3px;
+$btn-border-radius-sm:        5px;
+$btn-border-radius-lg:        8px;
+
+
+$btn-padding-y:               12px;
+$btn-padding-x:               20px;
+// $btn-font-family:             $input-btn-font-family !default;
+$btn-font-size:               16px;
+$btn-line-height:             1.625;
+$btn-white-space:             null !default; // Set to `nowrap` to prevent text wrapping
+
+$btn-padding-y-sm:            3px;
+$btn-padding-x-sm:            14px;
+$btn-font-size-sm:            12px;
+
+$btn-padding-y-lg:            16px;
+$btn-padding-x-lg:            24px;
+$btn-font-size-lg:            1rem;
+
+$btn-border-width:            2px;
+
+$border-radius: 3px;
+$border-radius-sm: 5px;
+$border-radius-lg: 8px;
+$input-box-shadow: none;
+
+// $input-btn-padding-y:         1rem;
+// $input-btn-padding-x:         1.5rem;
+
+$input-btn-font-size:         1.125rem;
+// $input-btn-line-height:       $line-height-base !default;
+
+// $input-btn-focus-width:         .2rem !default;
+// $input-btn-focus-color-opacity: .25 !default;
+$input-btn-focus-color:         transparent;
+$input-btn-focus-box-shadow:    none;
+$input-btn-border-width:      0;
+
+$input-bg: $bg-light;
+$input-color: #676767;
+// $input-height:  70px;
+
+
+$navbar-light-color:                rgba($black, .75);
+$navbar-nav-link-padding-x: 1rem;
+
+$grid-columns:                12 !default;
+$grid-gutter-width:           1.875rem !default;
+$grid-row-columns:            6 !default;

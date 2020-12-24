@@ -1,0 +1,30 @@
+/* Global */
+
+body,
+html {
+  height: 100%;
+}
+
+body {
+  line-height: 1.6;
+  padding-top: 87px;
+
+  @include media-breakpoint-up(xl) {
+    padding-top: 0;
+  }
+}
+
+svg {
+  fill: currentColor;
+}
+
+.is-overlay {
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
+.heading {
+  font-weight: 600;
+}
