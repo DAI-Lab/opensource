@@ -18,18 +18,15 @@ permalink: /
     {% capture currentProject%}{{ project | slugify }}, {% endcapture %}
     {% assign allProjects = allProjects | append: currentProject %}
   {% endfor %}
-  
-
-  
 {% endfor %} 
 
 <link rel="stylesheet" href="/css/main.css">
 
-<section class="mb-5 mt-8 mb-xxl-8">
+<section class="mb-5 mt-5 mt-md-8 mb-xxl-8 lib-wrap">
   <div class="container" style="max-width: 980px">
-    <div class="row">
-      <div class="col-lg-4 col-md-6 mb-4 lib-item">
-        <div class="input-group mb-2 bg-light">
+    <div class="row justify-content-center">
+      <div class="col-lg-4 col-md-6 mb-3 mb-md-4 lib-item">
+        <div class="input-group bg-light">
           <div class="input-group-prepend">
             <div class="input-group-text bg-light">
               <img src="/img/search.svg" width="14" height="14" alt="">
@@ -41,33 +38,34 @@ permalink: /
             type="search" 
             placeholder="Search by name" 
             aria-label="Search"
-            oninput="searchFunction()"
+            oninput="filterByThemeProj()"
             >
         </div>
         
       </div>
-      <div class="col-lg-4 col-md-6 mb-4 lib-item">
+      <div class="col-lg-4 col-md-6 mb-3 mb-md-4 lib-item">
         <!-- <label for="disabledSelect" class="form-label">Disabled select menu</label> -->
-      <select id="allThemes" 
-        onchange="filterByTheme()"
+      <select id="allThemes" data-current="all"
+        onchange="filterByThemeProj()"
         class="custom-select bg-light">
-        <option>All Themes</option>
+        <option value="all">All Themes</option>
         
         {% assign uniqueThemes = allThemes | split: ', ' | uniq %}
         {% for item in uniqueThemes %} 
-          <option value="{{item}}">{{item | replace: '-', ' '}}</option>
+          <option value="theme-{{item}}">{{item | replace: '-', ' '}}</option>
         {% endfor %}
       </select>
       </div>
-      <div class="col-lg-4 col-md-6 mb-4 lib-item">
+      <div class="col-lg-4 col-md-6 mb-3 mb-md-4 lib-item">
         <!-- <label for="disabledSelect" class="form-label">Disabled select menu</label> -->
-        <select id="allProjects" class="custom-select bg-light"
-          onchange="filterByProject()"
+        <select id="allProjects" data-current="all"
+          class="custom-select bg-light"
+          onchange="filterByThemeProj()"
           >
-          <option>All Projects</option>
+          <option value="all">All Projects</option>
           {% assign uniqueProjects = allProjects | split: ', ' | uniq %}
         {% for item in uniqueProjects %} 
-          <option value="{{item}}">{{item | replace: '-', ' '}}</option>
+          <option value="project-{{item}}">{{item | replace: '-', ' '}}</option>
         {% endfor %}
         </select>
       </div>
@@ -80,16 +78,16 @@ permalink: /
       {% assign currentThemes = '' %}
       {% assign currentProjects = '' %}
         {% for theme in item_themes %}
-          {% capture currentTheme%}{{ theme | slugify }} {% endcapture %}
+          {% capture currentTheme%}theme-{{ theme | slugify }} {% endcapture %}
           {% assign currentThemes = currentThemes | append: currentTheme %}
         {% endfor %}
 
         {% for project in item_projects %}
-          {% capture currentProject%}{{ project | slugify }} {% endcapture %}
+          {% capture currentProject%}project-{{ project | slugify }} {% endcapture %}
           {% assign currentProjects = currentProjects | append: currentProject %}
         {% endfor %}
 
-        <div class="col-lg-4 col-md-6 mb-4 lib-item {{currentThemes}} {{currentProjects}}">
+        <div class="col-lg-4 col-md-6 mb-3 mb-md-4 lib-item {{currentThemes}} {{currentProjects}}">
           <div class="card h-100 rounded-0 card-shadow">
             <div class="card-body pb-0 px-4 pt-4">
               <div>
@@ -100,11 +98,11 @@ permalink: /
               
             </div>
             
-            <div class="card-footer border-0 bg-transparent pt-0">
+            <div class="card-footer border-0 bg-transparent pt-0 px-4">
               <p class="github-topics text-10 mb-2" data-owner="{{ item.github_owner }}" data-repo="{{ item.github_repo }}">
                 
               </p>
-              <p class="mb-4" style="min-height: 75px;">
+              <p class="mb-4" style="min-height: 50px;">
                 <a href="https://pepy.tech/project/{{item.badge_name}}">
                   <img src="https://pepy.tech/badge/{{item.badge_name}}" alt="Downloads">
                 </a>

@@ -59,7 +59,7 @@
 }
 
 .lib-item {
-  width: 334px;
+  max-width: 334px;
 }
 
 .hero-logo {
@@ -72,5 +72,12 @@
 }
 
 .github-desc {
-  min-height: 66px;
+  
+  @include media-breakpoint-up(md) {
+    min-height: 66px;
+  }
+}
+
+.lib-wrap {
+  min-height: calc(100vh - 214px);
 }

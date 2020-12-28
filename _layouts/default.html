@@ -22,78 +22,73 @@
     {{ content }}
     {% include footer.html %}
 
-    {% comment %}
     <script src="{{'js/dist/app.bundle.js' | relative_url }}"></script>
     <script src="{{'js/dist/main.bundle.js' | relative_url }}"></script>
+    {% comment %}
     {% endcomment %}
-    <script src="//cdnjs.cloudflare.com/ajax/libs/list.js/2.3.0/list.min.js"></script>
 
     <script>
-      var options = {
-          valueNames: [ 'name', 'city' ]
-      };
+      function filterByThemeProj() {
+        var themeFilter, projectFilter, themeVal, projectVal, wrapper, items, themeItems, projItems, item, i, searchInput, matchesSearch;
 
-      var hackerList = new List('hacker-list', options);
-    </script>
+        searchInput = document.getElementById('searchInput');
+        filter = searchInput.value.toUpperCase();
 
-    <script>
-      function filterByTheme() {
-        var input, filter, wrapper, items, item, i, txtValue;
-        input = document.getElementById('allThemes');
-        filter = input.value;
+        themeFilter = document.getElementById('allThemes')
+        projectFilter = document.getElementById('allProjects')
         wrapper = document.getElementById("libWarp");
         items = wrapper.getElementsByClassName('lib-item');
-        console.log(filter);
+        themeVal = themeFilter.value
+        projectVal = projectFilter.value
 
-        // Loop through all list items, and hide those who don't match the search query
+
+        themeItems = (themeVal === 'all') ? wrapper.getElementsByClassName('lib-item') : wrapper.getElementsByClassName(themeVal)
+        projItems = (projectVal === 'all') ? wrapper.getElementsByClassName('lib-item') : wrapper.getElementsByClassName(projectVal)
+
+
         for (i = 0; i < items.length; i++) {
-          // txtValue = item.textContent || item.innerText;
-          if (items[i].classList.contains(filter)) {
+        
+          if (themeVal === 'all' && projectVal === 'all') {
             items[i].style.display = "";
-          } else {
-            items[i].style.display = "none";
+          } else if (themeVal === 'all' && projectVal !== 'all') {
+            if (items[i].classList.contains(projectVal)) {
+              items[i].style.display = "";
+            } else {
+              items[i].style.display = "none";
+            }
+          } else if (themeVal !== 'all' && projectVal === 'all') {
+            if (items[i].classList.contains(themeVal)) {
+              items[i].style.display = "";
+            } else {
+              items[i].style.display = "none";
+            }
+          } else if (themeVal !== 'all' && projectVal !== 'all') {
+            if (items[i].classList.contains(projectVal) && items[i].classList.contains(themeVal)) {
+              items[i].style.display = "";
+            } else {
+              items[i].style.display = "none";
+            }
           }
         }
-      }
 
-
-      function filterByProject() {
-        var input, filter, wrapper, items, item, i, txtValue;
-        input = document.getElementById('allProjects');
-        filter = input.value;
-        wrapper = document.getElementById("libWarp");
-        items = wrapper.getElementsByClassName('lib-item');
-
-        // Loop through all list items, and hide those who don't match the search query
-        for (i = 0; i < items.length; i++) {
-          // txtValue = item.textContent || item.innerText;
-          if (items[i].classList.contains(filter)) {
-            items[i].style.display = "";
-          } else {
-            items[i].style.display = "none";
+        if (filter !== '') {
+          for (i = 0; i < items.length; i++) { 
+            item = items[i].querySelector('.lib-name');
+            txtValue = item.textContent || item.innerText;
+            matchesSearch = txtValue.toUpperCase().indexOf(filter) > -1
+            if (matchesSearch && items[i].style.display === '') {
+              items[i].style.display = "";
+            } else {
+              items[i].style.display = "none";
+            }
           }
-        }
+
+
+          
+          
+        } 
       }
       
-      function searchFunction() {
-          // Declare variables
-        var input, filter, wrapper, items, item, i, txtValue;
-        input = document.getElementById('searchInput');
-        filter = input.value.toUpperCase();
-        wrapper = document.getElementById("libWarp");
-        items = wrapper.getElementsByClassName('lib-item');
-
-        // Loop through all list items, and hide those who don't match the search query
-        for (i = 0; i < items.length; i++) {
-          item = items[i].querySelector('.lib-name');
-          txtValue = item.textContent || item.innerText;
-          if (txtValue.toUpperCase().indexOf(filter) > -1) {
-            items[i].style.display = "";
-          } else {
-            items[i].style.display = "none";
-          }
-        }
-      }
     </script>
   </body>
 </html>

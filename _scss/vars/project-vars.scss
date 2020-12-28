@@ -135,7 +135,7 @@ $spacers: (
   1: $spacer / 4,
   2: $spacer / 2,
   3: $spacer,
-  4: $spacer * 1.5,
+  4: $spacer * 1.875,
   5: $spacer * 3,
   6: $spacer * 4,
   7: $spacer * 5,
@@ -180,12 +180,12 @@ $lead-font-size:              1.0625rem;
 
 $badge-font-weight:             400;
 
-$btn-border-radius:           3px;
+$btn-border-radius:           6px;
 $btn-border-radius-sm:        5px;
 $btn-border-radius-lg:        8px;
 
 
-$btn-padding-y:               12px;
+$btn-padding-y:               4px;
 $btn-padding-x:               20px;
 // $btn-font-family:             $input-btn-font-family !default;
 $btn-font-size:               16px;

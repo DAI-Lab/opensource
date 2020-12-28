@@ -5,7 +5,7 @@ email: info@email.com
 description: > # this means to ignore newlines until "baseurl:"
   The data tracer project aims at identifying metadata using machine learning. Where did the data come from, where did it go, what transforms happened, types, connections, are all what we aspire to identify.
 baseurl: "opensource" # the subpath of your site, e.g. /blog/
-# url: "https://data-dev.github.io/" # the base hostname & protocol for your site
+url: "https://dai-lab.github.io/" # the base hostname & protocol for your site
 twitter_username: jekyllrb
 github_username:  jekyll
 
