@@ -13902,10 +13902,6 @@ svg {
   min-width: 236px;
 }
 
-.min-height {
-  min-height: calc(100vh - 309px - 25px);
-}
-
 @media (min-width: 768px) {
   .github-desc {
     min-height: 66px;
@@ -13913,7 +13909,7 @@ svg {
 }
 
 .lib-wrap {
-  min-height: calc(100vh - 214px);
+  min-height: calc(100vh - 120px - 38px);
 }
 
 .custom-select {
