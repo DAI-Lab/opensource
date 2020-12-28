@@ -42,6 +42,12 @@
   font-weight: 400;
   line-height: 1;
   padding: 0.3rem 0.6rem;
+
+  &:hover {
+    background-color: transparentize($color: $lightblue, $amount: .8);
+    text-decoration: none;
+  }
+  
 }
 
 .card-shadow {
@@ -80,4 +86,9 @@
 
 .lib-wrap {
   min-height: calc(100vh - 214px);
+}
+
+.custom-select {
+  border-radius: 0px;
+  background: #F6F6F6 url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='4' height='5' viewBox='0 0 4 5'%3e%3cpath fill='%23343a40' d='M2 0L0 2h4zm0 5L0 3h4z'/%3e%3c/svg%3e") no-repeat right 1rem center/8px 10px;
 }

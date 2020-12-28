@@ -57,7 +57,7 @@ $purple:  #6f42c1 !default;
 $pink:    #d63384 !default;
 $red:     #F48387 !default;
 $orange:  #fd7e14 !default;
-$yellow:  #FFC54C !default;
+$yellow:  #FFCC56 !default;
 $green:   #198754 !default;
 $teal:    #20c997 !default;
 $cyan:    #0096DE !default;
@@ -207,10 +207,10 @@ $border-radius-sm: 5px;
 $border-radius-lg: 8px;
 $input-box-shadow: none;
 
-// $input-btn-padding-y:         1rem;
-// $input-btn-padding-x:         1.5rem;
+$input-btn-padding-y:         .45rem;
+$input-btn-padding-x:         1.5rem;
 
-$input-btn-font-size:         1.125rem;
+$input-btn-font-size:         0.875rem;
 // $input-btn-line-height:       $line-height-base !default;
 
 // $input-btn-focus-width:         .2rem !default;
@@ -219,13 +219,16 @@ $input-btn-focus-color:         transparent;
 $input-btn-focus-box-shadow:    none;
 $input-btn-border-width:      0;
 
+$form-select-border-radius: 0px;
+$input-border-radius: 0px;
+
 $input-bg: $bg-light;
 $input-color: #676767;
 // $input-height:  70px;
 
 
 $navbar-light-color:                rgba($black, .75);
-$navbar-nav-link-padding-x: 1rem;
+$navbar-nav-link-padding-x: 1.5rem;
 
 $grid-columns:                12 !default;
 $grid-gutter-width:           1.875rem !default;

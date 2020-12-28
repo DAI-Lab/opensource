@@ -13,6 +13,10 @@
     background: $white;
   }
 
+  @include media-breakpoint-up(lg) { 
+    min-height: 120px;
+  }
+
   // .nav-link {
   //   @include media-breakpoint-up(xxl) { 
   //     font-size: 1.5rem !important;
@@ -26,8 +30,18 @@
 .navbar-brand {
   left: 16px;
   top: 16px;
+  color: #004454 !important;
+
   @include media-breakpoint-up(lg) { 
     left: 32px;
+  }
+
+  font-size: 1.2rem ;
+  @include media-breakpoint-up(sm) { 
+    font-size: 1.25rem;
+  }
+  @include media-breakpoint-up(md) { 
+    font-size: 1.56rem;
   }
 }
 
@@ -38,14 +52,24 @@
 }
 
 .global_nav__link {
-  font-size: 1.5rem;
-  color: #0E3877;
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #0E3877 !important;
+  @include media-breakpoint-up(lg) { 
+    font-size: 1.5rem;
+    left: 32px;
+  }
 }
 
 .global_nav__btn {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
+  font-weight: 400;
   min-width: 130px;
-  color: #0E3877;
+  color: #0E3877 !important;
+  @include media-breakpoint-up(lg) { 
+    font-size: 1.5rem;
+
+  }
 }
 
 
