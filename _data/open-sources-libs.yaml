@@ -44,7 +44,7 @@
   Level: 
         
 - Library_name: CTGAN
-  badge_name: CTGAN
+  badge_name: CTGan
   Github_Link: "https://github.com/sdv-dev/CTGAN"
   github_owner: "sdv-dev"
   github_repo: "CTGAN"
