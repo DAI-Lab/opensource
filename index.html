@@ -20,7 +20,7 @@ permalink: /
   {% endfor %}
 {% endfor %} 
 
-<link rel="stylesheet" href="/css/main.css">
+<link rel="stylesheet" href="{{'/css/main.css' | absolute_url }}">
 
 <section class="pb-5 pt-md-7 pt-5 pb-xxl-8 lib-wrap">
   <div class="container" style="max-width: 980px">
@@ -29,7 +29,7 @@ permalink: /
         <div class="input-group bg-light">
           <div class="input-group-prepend">
             <div class="input-group-text bg-light pr-3">
-              <img src="/img/search.svg" width="14" height="14" alt="">
+              <img src="{{'/img/search.svg' | absolute_url }}" width="14" height="14" alt="">
             </div>
           </div>
           <input 
@@ -91,7 +91,7 @@ permalink: /
           <div class="card h-100 rounded-0 card-shadow">
             <div class="card-body pb-0 px-4 pt-4">
               <div>
-                <img src="img{{ item.Library_name | relative_url }}.svg" alt="{{ item.Library_name }}" style="width: 40px; height: 40px;">                
+                <img src="img{{ item.Library_name }}.svg" alt="{{ item.Library_name }}" style="width: 40px; height: 40px;">                
               </div>
               <p class="text-20 mt-3 mb-4 font-weight-normal lib-name">{{ item.Library_name }}</p>
               <p class="font-weight-light text-14 mb-2 github-desc">{{ item.Text_in_it }}</p>
