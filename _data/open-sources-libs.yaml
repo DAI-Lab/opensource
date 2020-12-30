@@ -239,7 +239,7 @@
   Level: 
         
 - Library_name: sdmetrics
-  badge_name: sdmetrics
+  badge_name: SDMetrics
   Github_Link: "https://github.com/sdv-dev/SDMetrics"
   github_owner: "sdv-dev"
   github_repo: "SDMetrics"
@@ -254,7 +254,7 @@
   Level: 
         
 - Library_name: sdgym
-  badge_name: sdgym
+  badge_name: SDGym
   Github_Link: "https://github.com/sdv-dev/SDGym"
   github_owner: "sdv-dev"
   github_repo: "SDGym"
