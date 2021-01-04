@@ -10,12 +10,12 @@ permalink: /
 {% assign item_themes = item.Theme | split: ", "%}
 {% assign item_projects = item.Project | split: ", "%}
   {% for theme in item_themes %}
-    {% capture currentTheme%}{{ theme | slugify }}, {% endcapture %}
+    {% capture currentTheme%}{{ theme | replace: ' ', '-' }}, {% endcapture %}
     {% assign allThemes = allThemes | append: currentTheme %}
   {% endfor %}
 
   {% for project in item_projects %}
-    {% capture currentProject%}{{ project | slugify }}, {% endcapture %}
+    {% capture currentProject%}{{ project | replace: ' ', '-' }}, {% endcapture %}
     {% assign allProjects = allProjects | append: currentProject %}
   {% endfor %}
 {% endfor %} 
@@ -52,20 +52,20 @@ permalink: /
         
         {% assign uniqueThemes = allThemes | split: ', ' | uniq %}
         {% for item in uniqueThemes %} 
-          <option value="theme-{{item}}">{{item | replace: '-', ' '}}</option>
+          <option value="theme-{{item}}">{{item | replace: '-', ' ' | capitalize}}</option>
         {% endfor %}
       </select>
       </div>
       <div class="col-lg-4 col-md-6 mb-3 mb-md-4 lib-item">
         <!-- <label for="disabledSelect" class="form-label">Disabled select menu</label> -->
         <select id="allProjects" data-current="all"
-          class="custom-select bg-light"
+          class="custom-select bg-light capitalize"
           onchange="filterByThemeProj()"
           >
           <option value="all">All Projects</option>
           {% assign uniqueProjects = allProjects | split: ', ' | uniq %}
         {% for item in uniqueProjects %} 
-          <option value="project-{{item}}">{{item | replace: '-', ' '}}</option>
+          <option value="project-{{item}}">{{item | replace: '-', ' ' | capitalize}}</option>
         {% endfor %}
         </select>
       </div>
@@ -78,12 +78,12 @@ permalink: /
       {% assign currentThemes = '' %}
       {% assign currentProjects = '' %}
         {% for theme in item_themes %}
-          {% capture currentTheme%}theme-{{ theme | slugify }} {% endcapture %}
+          {% capture currentTheme%}theme-{{ theme | replace: ' ', '-' }} {% endcapture %}
           {% assign currentThemes = currentThemes | append: currentTheme %}
         {% endfor %}
 
         {% for project in item_projects %}
-          {% capture currentProject%}project-{{ project | slugify }} {% endcapture %}
+          {% capture currentProject%}project-{{ project | replace: ' ', '-' }} {% endcapture %}
           {% assign currentProjects = currentProjects | append: currentProject %}
         {% endfor %}
 
