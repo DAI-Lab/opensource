@@ -65,7 +65,9 @@
 }
 
 .lib-item {
-  max-width: 334px;
+  @include media-breakpoint-down(xxl) {
+    max-width: 334px;
+  }
 }
 
 .hero-logo {

@@ -13894,8 +13894,10 @@ svg {
   }
 }
 
-.lib-item {
-  max-width: 334px;
+@media (max-width: 1699.98px) {
+  .lib-item {
+    max-width: 334px;
+  }
 }
 
 .hero-logo {
