@@ -1,5 +1,6 @@
 - Library_name: SDV
   badge_name: SDV
+  image_name: SDV
   Github_Link: "https://github.com/sdv-dev/SDV"
   github_owner: "sdv-dev"
   github_repo: "SDV"
@@ -15,6 +16,7 @@
         
 - Library_name: Copulas
   badge_name: Copulas
+  image_name: Copulas
   Github_Link: "https://github.com/sdv-dev/Copulas"
   github_owner: "sdv-dev"
   github_repo: "Copulas"
@@ -30,6 +32,7 @@
         
 - Library_name: RDT
   badge_name: RDT
+  image_name: RDT
   Github_Link: "https://github.com/sdv-dev/RDT"
   github_owner: "sdv-dev"
   github_repo: "RDT"
@@ -45,6 +48,7 @@
         
 - Library_name: CTGAN
   badge_name: CTGan
+  image_name: CTGan
   Github_Link: "https://github.com/sdv-dev/CTGAN"
   github_owner: "sdv-dev"
   github_repo: "CTGAN"
@@ -60,6 +64,7 @@
         
 - Library_name: DeepEcho
   badge_name: DeepEcho
+  image_name: DeepEcho
   Github_Link: "https://github.com/sdv-dev/DeepEcho"
   github_owner: "sdv-dev"
   github_repo: "DeepEcho"
@@ -75,6 +80,7 @@
         
 - Library_name: TGAN
   badge_name: TGAN
+  image_name: TGAN
   Github_Link: "https://github.com/sdv-dev/TGAN"
   github_owner: "sdv-dev"
   github_repo: "TGAN"
@@ -90,6 +96,7 @@
         
 - Library_name: Tracer
   badge_name: Tracer
+  image_name: Tracer
   Github_Link: "https://github.com/data-dev/DataTracer"
   github_owner: "data-dev"
   github_repo: "DataTracer"
@@ -105,6 +112,7 @@
         
 - Library_name: Metadata
   badge_name: Metadata
+  image_name: MetaData
   Github_Link: "https://github.com/data-dev/MetaData"
   github_owner: "data-dev"
   github_repo: "MetaData"
@@ -120,6 +128,7 @@
         
 - Library_name: BTB
   badge_name: baytune
+  image_name: BTB
   Github_Link: "https://github.com/HDI-Project/BTB"
   github_owner: "HDI-Project"
   github_repo: "BTB"
@@ -135,6 +144,7 @@
         
 - Library_name: MLBlocks
   badge_name: MLBlocks
+  image_name: MLBlocks
   Github_Link: "https://github.com/HDI-Project/MLBlocks"
   github_owner: "HDI-Project"
   github_repo: "MLBlocks"
@@ -150,6 +160,7 @@
         
 - Library_name: MLPrimitives
   badge_name: MLPrimitives
+  image_name: MLPrimitives
   Github_Link: "https://github.com/HDI-Project/MLPrimitives"
   github_owner: "HDI-Project"
   github_repo: "MLPrimitives"
@@ -165,6 +176,7 @@
         
 - Library_name: Orion
   badge_name: Orion
+  image_name: Orion
   Github_Link: "https://github.com/signals-dev/Orion"
   github_owner: "signals-dev"
   github_repo: "Orion"
@@ -180,6 +192,7 @@
         
 - Library_name: AutoBazaar
   badge_name: AutoBazaar
+  image_name: AutoBazaar
   Github_Link: "https://github.com/HDI-Project/AutoBazaar"
   github_owner: "HDI-Project"
   github_repo: "AutoBazaar"
@@ -195,6 +208,7 @@
         
 - Library_name: GreenGuard
   badge_name: GreenGuard
+  image_name: GreenGuard
   Github_Link: "https://github.com/signals-dev/GreenGuard"
   github_owner: "signals-dev"
   github_repo: "GreenGuard"
@@ -210,6 +224,7 @@
         
 - Library_name: Cardea
   badge_name: Cardea
+  image_name: Cardea
   Github_Link: "https://github.com/DAI-Lab/Cardea"
   github_owner: "DAI-Lab"
   github_repo: "Cardea"
@@ -225,6 +240,7 @@
         
 - Library_name: ATM
   badge_name: ATM
+  image_name: ATM
   Github_Link: "https://github.com/HDI-Project/ATM"
   github_owner: "HDI-Project"
   github_repo: "ATM"
@@ -240,6 +256,7 @@
         
 - Library_name: sdmetrics
   badge_name: SDMetrics
+  image_name: SDMetrics
   Github_Link: "https://github.com/sdv-dev/SDMetrics"
   github_owner: "sdv-dev"
   github_repo: "SDMetrics"
@@ -255,6 +272,7 @@
         
 - Library_name: sdgym
   badge_name: SDGym
+  image_name: SDGym
   Github_Link: "https://github.com/sdv-dev/SDGym"
   github_owner: "sdv-dev"
   github_repo: "SDGym"
@@ -270,6 +288,7 @@
         
 - Library_name: Datareactor
   badge_name: DataReactor
+  image_name: DataReactor
   Github_Link: "https://github.com/data-dev/DataReactor"
   github_owner: "data-dev"
   github_repo: "DataReactor"
