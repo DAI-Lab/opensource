@@ -70,7 +70,7 @@
   github_repo: "DeepEcho"
   Theme: synthetic data, time series
   Project: sdv
-  Text_in_it: ""
+  Text_in_it: "Synthetic Data Generation Python library for mixed-type, multivariate time series."
   website: 
   Stackoverflow: 
   slack_link: 
@@ -254,7 +254,7 @@
   downloads: 
   Level: 
         
-- Library_name: sdmetrics
+- Library_name: SDMetrics
   badge_name: SDMetrics
   image_name: SDMetrics
   Github_Link: "https://github.com/sdv-dev/SDMetrics"
@@ -270,7 +270,7 @@
   downloads: 
   Level: 
         
-- Library_name: sdgym
+- Library_name: SDGym
   badge_name: SDGym
   image_name: SDGym
   Github_Link: "https://github.com/sdv-dev/SDGym"
