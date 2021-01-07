@@ -16,7 +16,6 @@ window.addEventListener("load", function () {
       } else {
         var data = JSON.parse(this.responseText);
         const currentTopics = data.names;
-        console.log(currentTopics);
 
         let htmlToAdd = "";
 

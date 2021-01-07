@@ -65,7 +65,7 @@
 }
 
 .lib-item {
-  @include media-breakpoint-down(xxl) {
+  @include media-breakpoint-down(lg) {
     max-width: 334px;
   }
 }
