@@ -13,6 +13,17 @@
   docs_link: 
   downloads: 
   Level: 
+  badges:
+   - name: Downloads
+     url: "https://pepy.tech/project/SDV"
+     image: "https://pepy.tech/badge/SDV"
+   - name: PyPi Shield
+     url: "https://pypi.python.org/pypi/SDV"
+     image: "https://img.shields.io/pypi/v/SDV.svg"
+   - name: Coverage Status
+     url: "https://codecov.io/gh/sdv-dev/SDV"
+     image: "https://codecov.io/gh/sdv-dev/SDV/branch/master/graph/badge.svg" 
+
         
 - Library_name: Copulas
   badge_name: Copulas
@@ -29,6 +40,17 @@
   docs_link: 
   downloads: 
   Level: 
+  badges:
+   - name: Downloads
+     url: "https://pepy.tech/project/Copulas"
+     image: "https://pepy.tech/badge/Copulas"
+   - name: PyPi Shield
+     url: "https://pypi.python.org/pypi/Copulas"
+     image: "https://img.shields.io/pypi/v/Copulas.svg"
+   - name: Coverage Status
+     url: "https://codecov.io/gh/sdv-dev/Copulas"
+     image: "https://codecov.io/gh/sdv-dev/Copulas/branch/master/graph/badge.svg" 
+
         
 - Library_name: RDT
   badge_name: RDT
@@ -45,6 +67,17 @@
   docs_link: 
   downloads: 
   Level: 
+  badges:
+   - name: Downloads
+     url: "https://pepy.tech/project/RDT"
+     image: "https://pepy.tech/badge/RDT"
+   - name: PyPi Shield
+     url: "https://pypi.python.org/pypi/RDT"
+     image: "https://img.shields.io/pypi/v/RDT.svg"
+   - name: Coverage Status
+     url: "https://codecov.io/gh/sdv-dev/RDT"
+     image: "https://codecov.io/gh/sdv-dev/RDT/branch/master/graph/badge.svg" 
+
         
 - Library_name: CTGAN
   badge_name: CTGan
@@ -61,6 +94,17 @@
   docs_link: 
   downloads: 
   Level: 
+  badges:
+   - name: Downloads
+     url: "https://pepy.tech/project/CTGan"
+     image: "https://pepy.tech/badge/CTGan"
+   - name: PyPi Shield
+     url: "https://pypi.python.org/pypi/CTGan"
+     image: "https://img.shields.io/pypi/v/CTGan.svg"
+   - name: Coverage Status
+     url: "https://codecov.io/gh/sdv-dev/CTGan"
+     image: "https://codecov.io/gh/sdv-dev/CTGan/branch/master/graph/badge.svg" 
+
         
 - Library_name: DeepEcho
   badge_name: DeepEcho
@@ -77,6 +121,17 @@
   docs_link: 
   downloads: 
   Level: 
+  badges:
+   - name: Downloads
+     url: "https://pepy.tech/project/DeepEcho"
+     image: "https://pepy.tech/badge/DeepEcho"
+   - name: PyPi Shield
+     url: "https://pypi.python.org/pypi/DeepEcho"
+     image: "https://img.shields.io/pypi/v/DeepEcho.svg"
+   - name: Coverage Status
+     url: "https://codecov.io/gh/sdv-dev/DeepEcho"
+     image: "https://codecov.io/gh/sdv-dev/DeepEcho/branch/master/graph/badge.svg" 
+
         
 - Library_name: TGAN
   badge_name: TGAN
@@ -93,6 +148,17 @@
   docs_link: 
   downloads: 
   Level: 
+  badges:
+   - name: Downloads
+     url: "https://pepy.tech/project/TGAN"
+     image: "https://pepy.tech/badge/TGAN"
+   - name: PyPi Shield
+     url: "https://pypi.python.org/pypi/TGAN"
+     image: "https://img.shields.io/pypi/v/TGAN.svg"
+   - name: Coverage Status
+     url: "https://codecov.io/gh/sdv-dev/TGAN"
+     image: "https://codecov.io/gh/sdv-dev/TGAN/branch/master/graph/badge.svg" 
+
         
 - Library_name: Tracer
   badge_name: Tracer
@@ -109,6 +175,13 @@
   docs_link: 
   downloads: 
   Level: 
+  badges:
+   - name: Downloads
+     url: "https://pepy.tech/project/datatracer"
+     image: "https://pepy.tech/badge/datatracer"
+   - name: PyPi Shield
+     url: "https://pypi.python.org/pypi/datatracer"
+     image: "https://img.shields.io/pypi/v/datatracer.svg"
         
 - Library_name: Metadata
   badge_name: Metadata
@@ -125,6 +198,17 @@
   docs_link: 
   downloads: 
   Level: 
+  badges:
+   - name: Downloads
+     url: "https://pepy.tech/project/Metadata"
+     image: "https://pepy.tech/badge/Metadata"
+   - name: PyPi Shield
+     url: "https://pypi.python.org/pypi/Metadata"
+     image: "https://img.shields.io/pypi/v/Metadata.svg"
+   - name: Coverage Status
+     url: "https://codecov.io/gh/data-dev/MetaData"
+     image: "https://codecov.io/gh/data-dev/MetaData/branch/master/graph/badge.svg" 
+
         
 - Library_name: BTB
   badge_name: baytune
@@ -141,6 +225,17 @@
   docs_link: 
   downloads: 
   Level: 
+  badges:
+   - name: Downloads
+     url: "https://pepy.tech/project/baytune"
+     image: "https://pepy.tech/badge/baytune"
+   - name: PyPi Shield
+     url: "https://pypi.python.org/pypi/baytune"
+     image: "https://img.shields.io/pypi/v/baytune.svg"
+   - name: Coverage Status
+     url: "https://codecov.io/gh/MLBazaar/BTB"
+     image: "https://codecov.io/gh/MLBazaar/BTB/branch/master/graph/badge.svg" 
+
         
 - Library_name: MLBlocks
   badge_name: MLBlocks
@@ -157,6 +252,17 @@
   docs_link: 
   downloads: 
   Level: 
+  badges:
+   - name: Downloads
+     url: "https://pepy.tech/project/MLBlocks"
+     image: "https://pepy.tech/badge/MLBlocks"
+   - name: PyPi Shield
+     url: "https://pypi.python.org/pypi/MLBlocks"
+     image: "https://img.shields.io/pypi/v/MLBlocks.svg"
+   - name: Coverage Status
+     url: "https://codecov.io/gh/MLBazaar/MLBlocks"
+     image: "https://codecov.io/gh/MLBazaar/MLBlocks/branch/master/graph/badge.svg" 
+
         
 - Library_name: MLPrimitives
   badge_name: MLPrimitives
@@ -173,6 +279,13 @@
   docs_link: 
   downloads: 
   Level: 
+  badges:
+   - name: Downloads
+     url: "https://pepy.tech/project/MLPrimitives"
+     image: "https://pepy.tech/badge/MLPrimitives"
+   - name: PyPi Shield
+     url: "https://pypi.python.org/pypi/MLPrimitives"
+     image: "https://img.shields.io/pypi/v/MLPrimitives.svg"
         
 - Library_name: Orion
   badge_name: Orion
@@ -189,6 +302,13 @@
   docs_link: 
   downloads: 
   Level: 
+  badges:
+   - name: Downloads
+     url: "https://pepy.tech/project/Orion"
+     image: "https://pepy.tech/badge/Orion"
+   - name: PyPi Shield
+     url: "https://pypi.python.org/pypi/Orion"
+     image: "https://img.shields.io/pypi/v/Orion.svg"
         
 - Library_name: AutoBazaar
   badge_name: AutoBazaar
@@ -205,6 +325,17 @@
   docs_link: 
   downloads: 
   Level: 
+  badges:
+   - name: Downloads
+     url: "https://pepy.tech/project/AutoBazaar"
+     image: "https://pepy.tech/badge/AutoBazaar"
+   - name: PyPi Shield
+     url: "https://pypi.python.org/pypi/AutoBazaar"
+     image: "https://img.shields.io/pypi/v/AutoBazaar.svg"
+   - name: Tests
+     url: "https://github.com/MLBazaar/AutoBazaar/actions?query=workflow%3A%22Run+Tests%22+branch%3Amaster"
+     image: "https://github.com/MLBazaar/AutoBazaar/workflows/Run%20Tests/badge.svg" 
+
         
 - Library_name: GreenGuard
   badge_name: GreenGuard
@@ -221,6 +352,13 @@
   docs_link: 
   downloads: 
   Level: 
+  badges:
+   - name: Downloads
+     url: "https://pepy.tech/project/GreenGuard"
+     image: "https://pepy.tech/badge/GreenGuard"
+   - name: PyPi Shield
+     url: "https://pypi.python.org/pypi/GreenGuard"
+     image: "https://img.shields.io/pypi/v/GreenGuard.svg"
         
 - Library_name: Cardea
   badge_name: Cardea
@@ -237,6 +375,17 @@
   docs_link: 
   downloads: 
   Level: 
+  badges:
+   - name: Downloads
+     url: "https://pepy.tech/project/Cardea"
+     image: "https://pepy.tech/badge/Cardea"
+   - name: PyPi Shield
+     url: "https://pypi.python.org/pypi/Cardea"
+     image: "https://img.shields.io/pypi/v/Cardea.svg"
+   - name: Coverage Status
+     url: "https://travis-ci.org/DAI-Lab/Cardea"
+     image: "https://travis-ci.org/DAI-Lab/Cardea.svg?branch=master" 
+
         
 - Library_name: ATM
   badge_name: ATM
@@ -253,6 +402,17 @@
   docs_link: 
   downloads: 
   Level: 
+  badges:
+   - name: Downloads
+     url: "https://pepy.tech/project/ATM"
+     image: "https://pepy.tech/badge/ATM"
+   - name: PyPi Shield
+     url: "https://pypi.python.org/pypi/ATM"
+     image: "https://img.shields.io/pypi/v/ATM.svg"
+   - name: Coverage Status
+     url: "https://codecov.io/gh/HDI-project/ATM"
+     image: "https://codecov.io/gh/HDI-project/ATM/branch/master/graph/badge.svg" 
+
         
 - Library_name: SDMetrics
   badge_name: SDMetrics
@@ -269,6 +429,17 @@
   docs_link: 
   downloads: 
   Level: 
+  badges:
+   - name: Downloads
+     url: "https://pepy.tech/project/SDMetrics"
+     image: "https://pepy.tech/badge/SDMetrics"
+   - name: PyPi Shield
+     url: "https://pypi.python.org/pypi/SDMetrics"
+     image: "https://img.shields.io/pypi/v/SDMetrics.svg"
+   - name: Coverage Status
+     url: "https://codecov.io/gh/sdv-dev/SDMetrics"
+     image: "https://codecov.io/gh/sdv-dev/SDMetrics/branch/master/graph/badge.svg" 
+
         
 - Library_name: SDGym
   badge_name: SDGym
@@ -285,6 +456,17 @@
   docs_link: 
   downloads: 
   Level: 
+  badges:
+   - name: Downloads
+     url: "https://pepy.tech/project/SDGym"
+     image: "https://pepy.tech/badge/SDGym"
+   - name: PyPi Shield
+     url: "https://pypi.python.org/pypi/SDGym"
+     image: "https://img.shields.io/pypi/v/SDGym.svg"
+   - name: Coverage Status
+     url: "https://codecov.io/gh/sdv-dev/SDGym"
+     image: "https://codecov.io/gh/sdv-dev/SDGym/branch/master/graph/badge.svg" 
+
         
 - Library_name: Datareactor
   badge_name: DataReactor
@@ -301,3 +483,8 @@
   docs_link: 
   downloads: 
   Level: 
+  badges:
+   - name: Coverage Status
+     url: "https://codecov.io/gh/data-dev/DataReactor"
+     image: "https://codecov.io/gh/data-dev/DataReactor/branch/master/graph/badge.svg" 
+

@@ -103,18 +103,12 @@ permalink: /
                 
               </p>
               <p class="mb-4" style="min-height: 50px;">
-                <a href="https://pepy.tech/project/{{item.badge_name}}">
-                  <img src="https://pepy.tech/badge/{{item.badge_name}}" alt="Downloads">
+                {% for badge in item.badges %}
+                <a href="{{ badge.url }}">
+                  <img src="{{ badge.image }}" 
+                  alt="{{badge.name}}">
                 </a>
-                <a href="https://pypi.python.org/pypi/{{item.badge_name}}">
-                  <img 
-                    src="https://img.shields.io/pypi/v/{{item.badge_name}}.svg" 
-                    alt="PyPi Shield">
-                </a>
-                <a href="https://codecov.io/gh/sdv-dev/{{item.badge_name}}">
-                  <img src="https://codecov.io/gh/sdv-dev/{{item.badge_name}}/branch/master/graph/badge.svg" 
-                  alt="Coverage Status">
-                </a>
+                {% endfor %}
               </p>
               <p class="mb-2">
                 <a href="{{ item.Github_Link }}" class="mr-4 hoverable-i">
