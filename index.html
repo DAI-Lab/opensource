@@ -22,9 +22,9 @@ permalink: /
 
 <link rel="stylesheet" href="{{'/css/main.css' | absolute_url }}">
 
-<section class="pb-5 pt-md-7 pt-5 pb-xxl-8 lib-wrap">
+<section class="pb-5 pb-xxl-8 lib-wrap">
   <div class="container" style="max-width: 1010px">
-    <div class="row justify-content-center mb-3">
+    <div class="row justify-content-center mb-3 filter-bar pt-md-7 pt-5">
       <div class="col-lg-4 col-md-6 mb-3 mb-md-4 lib-item">
         <div class="input-group bg-light">
           <div class="input-group-prepend">
@@ -99,7 +99,7 @@ permalink: /
             </div>
             
             <div class="card-footer border-0 bg-transparent pt-0 px-4">
-              <p class="github-topics text-10 mb-2" data-owner="{{ item.github_owner }}" data-repo="{{ item.github_repo }}">
+              <p class="github-topics text-10 mb-2" style="min-height: 50px;" data-owner="{{ item.github_owner }}" data-repo="{{ item.github_repo }}">
                 
               </p>
               <p class="mb-4" style="min-height: 50px;">
@@ -110,7 +110,7 @@ permalink: /
                 </a>
                 {% endfor %}
               </p>
-              <p class="mb-2" style="min-height: 50px;">
+              <p class="mb-2">
                 <a href="{{ item.Github_Link }}" class="mr-4 hoverable-i">
                   <img width="17" height="17" src="{{'/img/Github.svg' | relative_url }}" alt="{{ item.Library_name }} Github repository">
                 </a>
