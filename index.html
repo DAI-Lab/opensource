@@ -111,11 +111,11 @@ permalink: /
                 {% endfor %}
               </p>
               <p class="mb-2">
-                <a href="{{ item.Github_Link }}" class="mr-4 hoverable-i">
+                <a href="{{ item.Github_Link }}" class="mr-3 hoverable-i">
                   <img width="17" height="17" src="{{'/img/Github.svg' | relative_url }}" alt="{{ item.Library_name }} Github repository">
                 </a>
-                {% if item.docs_link %}
-                <a href="{{ item.docs_link }}" class="mr-4 hoverable-i">
+                {% if item.docs_link != '' %}
+                <a href="{{ item.docs_link }}" class="mr-3 hoverable-i">
                   <img width="17" height="17" src="{{'/img/Docs.svg' | relative_url }}" alt="{{ item.Library_name }} Documentation">
                 </a>
                 {% endif %}

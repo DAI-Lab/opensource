@@ -10,7 +10,7 @@
   website: sdv.dev/sdv
   Stackoverflow: 
   slack_link: 
-  docs_link: 
+  docs_link: "https://sdv.dev/SDV/"
   downloads: 
   Level: 
   badges:
@@ -37,7 +37,7 @@
   website: sdv.dev/copulas/
   Stackoverflow: 
   slack_link: 
-  docs_link: 
+  docs_link: "https://sdv.dev/Copulas/"
   downloads: 
   Level: 
   badges:
@@ -91,7 +91,7 @@
   website: 
   Stackoverflow: 
   slack_link: 
-  docs_link: 
+  docs_link: "https://sdv.dev/SDV/"
   downloads: 
   Level: 
   badges:
@@ -195,7 +195,7 @@
   website: https://data-dev.github.io/MetaData/
   Stackoverflow: 
   slack_link: 
-  docs_link: 
+  docs_link: "https://data-dev.github.io/MetaData/"
   downloads: 
   Level: 
   badges:
@@ -222,7 +222,7 @@
   website: https://hdi-project.github.io/BTB/
   Stackoverflow: 
   slack_link: 
-  docs_link: 
+  docs_link: "https://mlbazaar.github.io/BTB/"
   downloads: 
   Level: 
   badges:
@@ -249,7 +249,7 @@
   website: https://hdi-project.github.io/MLBlocks/
   Stackoverflow: 
   slack_link: 
-  docs_link: 
+  docs_link: "https://mlbazaar.github.io/MLBlocks/"
   downloads: 
   Level: 
   badges:
@@ -276,7 +276,7 @@
   website: https://hdi-project.github.io/MLPrimitives/
   Stackoverflow: 
   slack_link: 
-  docs_link: 
+  docs_link: "https://mlbazaar.github.io/MLPrimitives/"
   downloads: 
   Level: 
   badges:
@@ -299,7 +299,7 @@
   website: https://signals-dev.github.io/Orion/
   Stackoverflow: 
   slack_link: 
-  docs_link: 
+  docs_link: "https://signals-dev.github.io/Orion/"
   downloads: 
   Level: 
   badges:
@@ -322,7 +322,7 @@
   website: https://hdi-project.github.io/AutoBazaar/
   Stackoverflow: 
   slack_link: 
-  docs_link: 
+  docs_link: "https://mlbazaar.github.io/AutoBazaar/"
   downloads: 
   Level: 
   badges:
@@ -349,7 +349,7 @@
   website: https://signals-dev.github.io/GreenGuard/
   Stackoverflow: 
   slack_link: 
-  docs_link: 
+  docs_link: "https://signals-dev.github.io/GreenGuard/"
   downloads: 
   Level: 
   badges:
@@ -372,7 +372,7 @@
   website: 
   Stackoverflow: 
   slack_link: 
-  docs_link: 
+  docs_link: "https://dai-lab.github.io/Cardea/"
   downloads: 
   Level: 
   badges:
@@ -399,7 +399,7 @@
   website: https://hdi-project.github.io/ATM/
   Stackoverflow: 
   slack_link: 
-  docs_link: 
+  docs_link: "https://hdi-project.github.io/ATM/"
   downloads: 
   Level: 
   badges:
@@ -426,7 +426,7 @@
   website: 
   Stackoverflow: 
   slack_link: 
-  docs_link: 
+  docs_link: "https://sdv.dev/SDV/"
   downloads: 
   Level: 
   badges:
@@ -453,7 +453,7 @@
   website: 
   Stackoverflow: 
   slack_link: 
-  docs_link: 
+  docs_link: "https://sdv.dev/SDV/"
   downloads: 
   Level: 
   badges:
@@ -480,7 +480,7 @@
   website: https://data-dev.github.io/DataReactor/
   Stackoverflow: 
   slack_link: 
-  docs_link: 
+  docs_link: "https://data-dev.github.io/DataReactor/"
   downloads: 
   Level: 
   badges:
