@@ -28,6 +28,32 @@
     {% endcomment %}
 
     <script>
+
+      function showClearFilter(id, value) {
+        var curr = document.getElementById(id)
+        curr.classList.replace('d-none', 'd-inline-block')
+        curr.innerHTML = `${value} <span class="text-danger">&times;</span>`
+      }
+
+      function hideClearFilter(id) {
+        var curr = document.getElementById(id)
+        curr.classList.replace('d-inline-block', 'd-none')
+      }
+
+      function resetTheme() {
+        var themeFilter = document.getElementById('allThemes')
+        themeFilter.value = 'all';
+        filterByThemeProj()
+        document.getElementById('clearTheme').classList.replace('d-inline-block', 'd-none')
+      }
+      function resetProject() {
+        var projectFilter = document.getElementById('allProjects')
+        projectFilter.value = 'all'
+        filterByThemeProj()
+        document.getElementById('clearProject').classList.replace('d-inline-block', 'd-none')
+      }
+
+
       function filterByThemeProj() {
         var themeFilter, projectFilter, themeVal, projectVal, wrapper, items, themeItems, projItems, item, i, searchInput, matchesSearch;
 
@@ -41,37 +67,59 @@
         themeVal = themeFilter.value
         projectVal = projectFilter.value
 
+        var readableTheme = themeVal.replace('theme-', '').replace('-', ' ')
+        var readableProject = projectVal.replace('project-', '').replace('-', ' ')
+
 
         themeItems = (themeVal === 'all') ? wrapper.getElementsByClassName('lib-item') : wrapper.getElementsByClassName(themeVal)
         projItems = (projectVal === 'all') ? wrapper.getElementsByClassName('lib-item') : wrapper.getElementsByClassName(projectVal)
 
 
+        var itemsCounter = 0
         for (i = 0; i < items.length; i++) {
-        
           if (themeVal === 'all' && projectVal === 'all') {
+            hideClearFilter('clearTheme');
+            hideClearFilter('clearProject');
             items[i].style.display = "";
           } else if (themeVal === 'all' && projectVal !== 'all') {
+            showClearFilter('clearProject', readableProject)
+            hideClearFilter('clearTheme');
             if (items[i].classList.contains(projectVal)) {
               items[i].style.display = "";
             } else {
               items[i].style.display = "none";
+              itemsCounter++
             }
           } else if (themeVal !== 'all' && projectVal === 'all') {
+            showClearFilter('clearTheme', readableTheme)
+            hideClearFilter('clearProject');
             if (items[i].classList.contains(themeVal)) {
               items[i].style.display = "";
             } else {
               items[i].style.display = "none";
+              itemsCounter++
             }
           } else if (themeVal !== 'all' && projectVal !== 'all') {
+            showClearFilter('clearProject', readableProject)
+            showClearFilter('clearTheme', readableTheme)
             if (items[i].classList.contains(projectVal) && items[i].classList.contains(themeVal)) {
               items[i].style.display = "";
             } else {
               items[i].style.display = "none";
+              itemsCounter++
             }
           }
+          console.log(itemsCounter)
+        }
+
+        if (itemsCounter >= items.length) {
+          document.getElementById('notFound').classList.replace('d-none', 'd-block')
+        } else {
+          document.getElementById('notFound').classList.replace('d-block', 'd-none')
         }
 
         if (filter !== '') {
+          var hiddenItemsCounter = 0
           for (i = 0; i < items.length; i++) { 
             item = items[i].querySelector('.lib-name');
             txtValue = item.textContent || item.innerText;
@@ -79,13 +127,16 @@
             if (matchesSearch && items[i].style.display === '') {
               items[i].style.display = "";
             } else {
+              hiddenItemsCounter++
               items[i].style.display = "none";
             }
           }
-
-
           
-          
+          if (hiddenItemsCounter >= items.length) {
+            document.getElementById('notFound').classList.replace('d-none', 'd-block')
+          } else {
+            document.getElementById('notFound').classList.replace('d-block', 'd-none')
+          }
         } 
       }
       

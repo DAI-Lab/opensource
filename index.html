@@ -55,6 +55,9 @@ permalink: /
           <option value="theme-{{item}}">{{item | replace: '-', ' ' | capitalize}}</option>
         {% endfor %}
       </select>
+        <button id="clearTheme" type="button" class="d-none mt-2 badge-pill btn btn-light btn-sm rounded-full" onclick="resetTheme()">
+          Time series <span class="text-danger">&times;</span>
+        </button>
       </div>
       <div class="col-lg-4 col-md-6 mb-3 mb-md-4 lib-item">
         <!-- <label for="disabledSelect" class="form-label">Disabled select menu</label> -->
@@ -68,8 +71,12 @@ permalink: /
           <option value="project-{{item}}">{{item | replace: '-', ' ' | capitalize}}</option>
         {% endfor %}
         </select>
+        <button id="clearProject" type="button" class="d-none mt-2 badge-pill btn btn-light btn-sm rounded-full" onclick="resetProject()">
+          Sdv <span class="text-danger">&times;</span>
+        </button>
       </div>
     </div>
+    
     <div class="row justify-content-center justify-content-lg-start" id="libWarp">
       {% assign libs = site.data.open-sources-libs | sort_natural: "Library_name" %}
       {% for item in libs %}
@@ -119,12 +126,22 @@ permalink: /
                   <img width="17" height="17" src="{{'/img/Docs.svg' | relative_url }}" alt="{{ item.Library_name }} Documentation">
                 </a>
                 {% endif %}
+                {% if item.slack_link != '' %}
+                <a href="{{ item.slack_link }}" class="mr-3 hoverable-i">
+                  <img width="17" height="17" src="{{'/img/Slack.svg' | relative_url }}" alt="{{ item.Library_name }} Documentation">
+                </a>
+                {% endif %}
               </p>
             </div>
             
           </div>
         </div>
         {% endfor %}
+    </div>
+    <div class="row justify-content-center d-none" id="notFound">
+      <p class="text-center bold">
+        No results found
+      </p>
     </div>
   </div>
 </section>
