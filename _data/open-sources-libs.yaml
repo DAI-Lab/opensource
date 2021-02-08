@@ -200,10 +200,10 @@
   Level: 
   badges:
    - name: Downloads
-     url: "https://pepy.tech/project/Metadata"
-     image: "https://pepy.tech/badge/Metadata"
+     url: "https://pepy.tech/project/Metad"
+     image: "https://pepy.tech/badge/Metad"
    - name: PyPi Shield
-     url: "https://pypi.python.org/pypi/Metadata"
+     url: "https://pypi.python.org/pypi/Metad"
      image: "https://img.shields.io/pypi/v/Metadata.svg"
    - name: Coverage Status
      url: "https://codecov.io/gh/data-dev/MetaData"
@@ -304,10 +304,10 @@
   Level: 
   badges:
    - name: Downloads
-     url: "https://pepy.tech/project/Orion"
-     image: "https://pepy.tech/badge/Orion"
+     url: "https://pepy.tech/project/orion-ml"
+     image: "https://pepy.tech/badge/orion-ml"
    - name: PyPi Shield
-     url: "https://pypi.python.org/pypi/Orion"
+     url: "https://pypi.python.org/pypi/orion-ml"
      image: "https://img.shields.io/pypi/v/Orion.svg"
         
 - Library_name: AutoBazaar
