@@ -1,4 +1,4 @@
-window.addEventListener("load", function () {
+window.addEventListener("DOMContentLoaded", function () {
   const githubTopicsItems = Array.prototype.slice.call(
     document.querySelectorAll(".github-topics")
   );
